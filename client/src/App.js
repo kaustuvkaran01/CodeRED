@@ -1,8 +1,8 @@
 import React from "react";
 // import Appointments from "./pages/appointments";
 import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
-import 'bulma/css/bulma.css'
-import './pages/App.css'
+// import 'bulma/css/bulma.css'
+// import './pages/App.css'
 import Profile from "./components/Profile";
 import { useAuth0 } from "@auth0/auth0-react";
 // import LoginButton from './components/Login/LoginButton';
