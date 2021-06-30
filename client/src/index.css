@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+input:checked + div {
+  @apply border-pink-dark;
+}
+input:checked + div svg {
+  @apply block;
+}

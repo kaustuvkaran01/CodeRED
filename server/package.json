@@ -1,0 +1,37 @@
+{
+  "name": "periods-tracker",
+  "version": "1.0.0",
+  "description": "server-periods-tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server",
+    "client": "cd .. && cd client && npm start",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srivastavayushi/periods-tracker.git"
+  },
+  "author": "Kaustuv and Ayushi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srivastavayushi/periods-tracker/issues"
+  },
+  "homepage": "https://github.com/srivastavayushi/periods-tracker#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.4.0",
+    "express-session": "^1.17.2",
+    "mongoose": "^5.12.12",
+    "node-geocoder": "^3.27.0",
+    "passport": "^0.4.1",
+    "passport-auth0": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
