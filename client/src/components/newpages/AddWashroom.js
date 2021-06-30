@@ -81,6 +81,8 @@ export default function StoreMap() {
   } = formData;
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    console.log(lat);
+    console.log(lng);
 
   const onTick = (e) => {
     setFormData({ ...formData, [e.target.name]: true });

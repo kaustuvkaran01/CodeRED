@@ -21,12 +21,12 @@ import FetchMarkers from "./components/newpages/FetchMarkers";
 import Issues from "./components/newpages/Issues";
 import AddStores from "./components/newpages/AddStores";
 import AddWashroom from "./components/newpages/AddWashroom";
-import StoreProfile from "./components/newpages/StoreProfile";
+// import StoreProfile from "./components/newpages/StoreProfile";
 import Organisation from "./components/newpages/organisations/index";
 import AddOrganisation from "./components/newpages/organisations/AddOrg";
 // import Video from './pages/App'
-import Index from './pages/index/index'
-import Meeting from './pages/meeting/index'
+// import Index from './pages/index/index'
+// import Meeting from './pages/meeting/index'
 
 export default function App() {
   const { isLoading } = useAuth0();
@@ -51,13 +51,13 @@ export default function App() {
       <Route path="/addstores" component={AddStores} />
       <Route path="/addwashroom" component={AddWashroom} />
       
-      <Route path="/oneStore/:toiletId" component={StoreProfile} />
+      {/* <Route path="/oneStore/:toiletId" component={StoreProfile} /> */}
       <Route path="/organisation" component={Organisation} />
       <Route path="/addorg" component={AddOrganisation} />
       {/* <Route path="/videomeet" component={Video} /> */}
 
-      <Route exact path="/video" component={Index} />
-      <Route path="/meeting" component={Meeting} />
+      {/* <Route exact path="/video" component={Index} /> */}
+      {/* <Route path="/meeting" component={Meeting} /> */}
 
       
       {/* <Route path="/addtoilet" component={AddToilet}/> */}
