@@ -9,11 +9,11 @@ export const ProfileData = [
     path: "/stores",
     icon: <AiIcons.AiFillHome />,
   },
-  {
-    title: "Raise an issue",
-    path: "/issues",
-    icon: <FaIcons.FaCodepen />,
-  },
+  // {
+  //   title: "Raise an issue",
+  //   path: "/issues",
+  //   icon: <FaIcons.FaCodepen />,
+  // },
   {
     title: "Add a store",
     path: "/addstores",
@@ -24,19 +24,19 @@ export const ProfileData = [
     path: "/addwashroom",
     icon: <FaIcons.FaEnvelopeOpenText />,
   },
-  {
-    title: "Settings",
-    path: "/settings",
-    icon: <IoIcons.IoMdChatboxes />,
-  },
-  {
-    title: "Add Organisation ",
-    path: "/addOrg",
-    icon: <IoIcons.IoIosPaper />,
-  },
-    {
-    title: "View My Organisation ",
-    path: "/organisation",
-    icon: <IoIcons.IoIosPaper />,
-  },
+  // {
+  //   title: "Settings",
+  //   path: "/settings",
+  //   icon: <IoIcons.IoMdChatboxes />,
+  // },
+  // {
+  //   title: "Add Organisation ",
+  //   path: "/addOrg",
+  //   icon: <IoIcons.IoIosPaper />,
+  // },
+  //   {
+  //   title: "View My Organisation ",
+  //   path: "/organisation",
+  //   icon: <IoIcons.IoIosPaper />,
+  // },
 ];
