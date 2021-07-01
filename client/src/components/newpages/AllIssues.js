@@ -59,7 +59,7 @@ export default function AllIssues() {
         },
       };
       const body = JSON.stringify(newQuery);
-      const res = await axios.post("http://localhost:4000/api/query/newQuery", body, config);
+      const res = await axios.post("https://fathomless-anchorage-82136.herokuapp.com/api/query/newQuery", body, config);
       console.log(res.data);
     } catch (err) {
       console.error(err.response.data);
@@ -69,7 +69,7 @@ export default function AllIssues() {
   // FETCH ISSUES
   const [issues,setIssues]= React.useState([]);
   
-  const fetchUrl = 'http://localhost:4000/api/query/allQueries'
+  const fetchUrl = 'https://fathomless-anchorage-82136.herokuapp.com/api/query/allQueries'
   useEffect(()=>{
     async function fetchIssues(){
       const request = await axios.get(fetchUrl);

@@ -111,7 +111,7 @@ export default function StoreMap() {
         },
       };
       const body = JSON.stringify(newWashroom);
-      const res = await axios.post("http://localhost:4000/api/toilet/newToilet", body, config);
+      const res = await axios.post("https://fathomless-anchorage-82136.herokuapp.com/api/toilet/newToilet", body, config);
       console.log(res);
     } catch (err) {
       console.error(err.response);

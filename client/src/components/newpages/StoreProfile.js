@@ -28,7 +28,7 @@ export default function StoreProfile() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/stores/oneStore", {
+    fetch("https://fathomless-anchorage-82136.herokuapp.com/api/stores/oneStore", {
         method: "post",
         headers: {
             "Content-Type": "application/json",

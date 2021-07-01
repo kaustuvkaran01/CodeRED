@@ -107,7 +107,7 @@ export default function StoreMap() {
         },
       };
       const body = JSON.stringify(newStore);
-      const res = await axios.post("http://localhost:4000/api/stores/addStore", body, config);
+      const res = await axios.post("https://fathomless-anchorage-82136.herokuapp.com/api/stores/addStore", body, config);
       console.log(res.data);
     } catch (err) {
       console.error(err.response.data);

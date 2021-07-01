@@ -42,7 +42,7 @@ export default function AddIssues() {
         },
       };
       const body = JSON.stringify(newQuery);
-      const res = await axios.post("http://localhost:4000/api/orgs/newQuery", body, config);
+      const res = await axios.post("https://fathomless-anchorage-82136.herokuapp.com/api/orgs/newQuery", body, config);
       console.log(res.data);
     } catch (err) {
       console.error(err.response.data);

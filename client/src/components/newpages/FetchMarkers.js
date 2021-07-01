@@ -53,7 +53,7 @@ export default function FetchMarkers() {
   const [selected, setSelected] = React.useState(null);
   const [markerWashrooms,setMarkerWashrooms]= React.useState([]);
   
-  const fetchUrl = 'http://localhost:4000/api/toilet/allToilets'
+  const fetchUrl = 'https://fathomless-anchorage-82136.herokuapp.com/api/toilet/allToilets'
   useEffect(()=>{
     async function fetchWashrooms(){
       const request = await axios.get(fetchUrl);
@@ -65,7 +65,7 @@ export default function FetchMarkers() {
 
   const [markerStores,setMarkerStores]= React.useState([]);
   
-  const fetchUrlStore = 'http://localhost:4000/api/stores/allStores'
+  const fetchUrlStore = 'https://fathomless-anchorage-82136.herokuapp.com/api/stores/allStores'
   useEffect(()=>{
     async function fetchStores(){
       const request = await axios.get(fetchUrlStore);
