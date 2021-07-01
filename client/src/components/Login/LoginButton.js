@@ -29,7 +29,7 @@ const LoginButton = () => {
   return (
     !isAuthenticated && (
 
-    <button className="flex items-center self-start justify-center px-5 py-3 mt-5 ml-5 text-base font-medium leading-tight text-indigo-500 transition duration-150 ease-in-out bg-pink-dark border-transparent rounded-lg shadow hover:bg-white focus:outline-none focus:border-gray-100 focus:shadow-outline-gray md:py-4 md:text-lg md:px-8" onClick={loginWithRedirect}>
+    <button className="flex items-center self-start justify-center px-5 py-3 mt-5 ml-5 text-base font-medium leading-tight text-indigo-500 transition duration-150 ease-in-out bg-pink-dark border-transparent rounded-lg shadow focus:outline-none focus:border-gray-100 focus:shadow-outline-gray md:py-4 md:text-lg md:px-8 hover:bg-red-dark hover:text-white" onClick={loginWithRedirect}>
         Log in 
     </button>
     )    
