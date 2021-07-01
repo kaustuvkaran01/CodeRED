@@ -4,9 +4,13 @@
   "description": "server-periods-tracker",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server",
+    "start": "node server",
+    "heroku-postbuild":"cd client && npm install --only=dev && npm install && npm run build",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "engines":{
+    "node":"15.5.1"
   },
   "repository": {
     "type": "git",

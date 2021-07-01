@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 const app = express();
 const cors = require("cors");
 const connectDB = require("./config/db");
@@ -8,6 +7,8 @@ const dotenv = require("dotenv");
 var passport = require('passport');
 var Auth0Strategy = require('passport-auth0');
 var session = require('express-session');
+
+const path = require("path");
 
 app.use(cors());
 var sess = {
@@ -44,6 +45,8 @@ passport.use(strategy);
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+
 dotenv.config({path:'./config/config.env'});
 
 //Connect Database
@@ -75,5 +78,10 @@ app.use("/api/toilet",require("./routes/api/toilet"));
 app.use("/api/orgs",require("./routes/api/orgs"));
 app.use("/api/query",require("./routes/api/query"));
 
+app.use(express.static(path.join(__dirname, "client", "build")))
 
-app.listen(4000, () => console.log("Server started on port 4000"));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
+app.listen(process.env.PORT || 5000, () => console.log(`Server started on port ${process.env.PORT}`));
